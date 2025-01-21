@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Online Image Editor </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="img-container">
+        <img src="./img/image.jpg" alt="" id="box">
+    </div>
+
+    <div class="container">
+
+        <h1>Image Upload and Edit</h1>
+
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept=".avif" onchange="demo()">
+            <label for="imageUpload">Choose an image</label>
+        </div>
+
+
+        <div class="controls">
+
+            <div class="btn">
+                <div class="bright">
+                    <h5>Brightness</h5>
+
+                    <input type="range" min="0" max="200" id="brightness" oninput="brightness()">
+                </div>
+
+                <div class="contrast">
+                    <h5>Contrast</h5>
+                    <input type="range" min="0" max="200" id="contrast"
+                    oninput="contrast()">
+                </div>
+
+                <div class="saturation">
+                    <h5>Saturation</h5>
+
+                    <input type="range" min="0" max="200" id="saturation"
+                    oninput="saturation()">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
